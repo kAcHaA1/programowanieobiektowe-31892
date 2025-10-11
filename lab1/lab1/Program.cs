@@ -68,9 +68,10 @@ do
     Console.ReadLine());
 } 
 while (liczba <= 0);
-*/
+
 string[] miasta = {" Poznan", "Warszawa", "Krakow","Gdansk","Gdynia" };
 foreach (string miasto in miasta )
 {
     Console.WriteLine($"Miasto :{miasto}");
 }
+*/
