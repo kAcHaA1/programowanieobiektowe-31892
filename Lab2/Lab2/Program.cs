@@ -32,4 +32,46 @@ class Pies : Zwierze
 
 class Kot: Zwierze
 {
+    public void Miaucz() => Console.WriteLine("Miau miau!");
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Kot k = new Kot();
+        k.Jedz();   
+        k.Miaucz(); 
+    }
+}
+*/
+/*
+zadanie 7
+class Zwierze
+{
+    public virtual void DajGlos() => Console.WriteLine("Zwierzę wydaje dźwięk");
+}
+
+class Pies : Zwierze
+{
+    public override void DajGlos() => Console.WriteLine("Hau hau!");
+}
+
+class Kot : Zwierze
+{
+    public override void DajGlos() => Console.WriteLine("Miau!");
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+       
+        Zwierze[] zwierzeta = { new Pies(), new Kot(), new Pies(), new Zwierze() };
+
+        foreach (Zwierze z in zwierzeta)
+        {
+            z.DajGlos(); 
+        }
+    }
+}
 */
